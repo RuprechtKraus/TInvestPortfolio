@@ -13,7 +13,7 @@ namespace TInvestPortfolio.Infrastructure.TInvest;
 public sealed class TInvestClient(HttpClient httpClient, IOptions<TInvestOptions> options) : ITInvestClient
 {
     private const string ApiPrefix = "/rest/tinkoff.public.invest.api.contract.v1.";
-    private static readonly JsonSerializerOptions JsonOptions = new JsonSerializerOptions(JsonSerializerDefaults.Web);
+    private static readonly JsonSerializerOptions _jsonOptions = new JsonSerializerOptions(JsonSerializerDefaults.Web);
 
     /// <summary>
     /// Получает список открытых счетов T-Invest.
@@ -104,10 +104,10 @@ public sealed class TInvestClient(HttpClient httpClient, IOptions<TInvestOptions
     {
         ConfigureAuthorizationHeader();
         using var response =
-            await httpClient.PostAsJsonAsync($"{ApiPrefix}{method}", request, JsonOptions, cancellationToken);
+            await httpClient.PostAsJsonAsync($"{ApiPrefix}{method}", request, _jsonOptions, cancellationToken);
         response.EnsureSuccessStatusCode();
 
-        return await response.Content.ReadFromJsonAsync<TResponse>(JsonOptions, cancellationToken) ??
+        return await response.Content.ReadFromJsonAsync<TResponse>(_jsonOptions, cancellationToken) ??
                throw new InvalidOperationException($"T-Invest returned an empty response for {method}.");
     }
 

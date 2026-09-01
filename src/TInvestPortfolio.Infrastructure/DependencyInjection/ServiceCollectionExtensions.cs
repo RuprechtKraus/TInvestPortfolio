@@ -17,6 +17,7 @@ public static class ServiceCollectionExtensions
     /// Регистрирует клиент T-Invest, провайдер портфеля и Excel-экспортёр.
     /// </summary>
     /// <param name="services">Коллекция сервисов, в которую добавляются регистрации.</param>
+    /// <param name="configuration"></param>
     /// <returns>Та же коллекция сервисов с добавленными инфраструктурными зависимостями.</returns>
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
