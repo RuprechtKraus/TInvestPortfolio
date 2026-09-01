@@ -1,0 +1,56 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Test results, coverage, and generated reports
+[Tt]est[Rr]esult*/
+TestResults/
+coverage*/
+*.coverage
+*.coveragexml
+*.lcov
+Reports/
+
+# Visual Studio workspace and user-specific files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.sln.DotSettings.user
+*.rsuser
+
+# JetBrains IDEs
+.idea/
+*.sln.iml
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!packages/build/
+*.nuget.props
+*.nuget.targets
+
+# .NET tooling and publish artifacts
+artifacts/
+publish/
+BenchmarkDotNet.Artifacts/
+project.lock.json
+project.fragment.lock.json
+
+# Local settings and secrets (use .NET User Secrets for credentials)
+appsettings.Local.json
+appsettings.*.local.json
+secrets.json
+*.secret.json
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini

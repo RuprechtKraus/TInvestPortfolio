@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TInvestPortfolio.Core", "src\TInvestPortfolio.Core\TInvestPortfolio.Core.csproj", "{6F08CCF7-9911-4337-993B-2C6B77D78419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TInvestPortfolio.Infrastructure", "src\TInvestPortfolio.Infrastructure\TInvestPortfolio.Infrastructure.csproj", "{203C7A79-408A-4D91-9A75-B60575130349}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TInvestPortfolio.Cli", "src\TInvestPortfolio.Cli\TInvestPortfolio.Cli.csproj", "{3CF37F1A-F708-4429-99A6-70592B927DC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TInvestPortfolio.Core.Tests", "tests\TInvestPortfolio.Core.Tests\TInvestPortfolio.Core.Tests.csproj", "{68A04E5F-EC44-46F7-B905-3D0C28C0D8F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F08CCF7-9911-4337-993B-2C6B77D78419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F08CCF7-9911-4337-993B-2C6B77D78419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F08CCF7-9911-4337-993B-2C6B77D78419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F08CCF7-9911-4337-993B-2C6B77D78419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203C7A79-408A-4D91-9A75-B60575130349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203C7A79-408A-4D91-9A75-B60575130349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203C7A79-408A-4D91-9A75-B60575130349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203C7A79-408A-4D91-9A75-B60575130349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF37F1A-F708-4429-99A6-70592B927DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF37F1A-F708-4429-99A6-70592B927DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF37F1A-F708-4429-99A6-70592B927DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF37F1A-F708-4429-99A6-70592B927DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A04E5F-EC44-46F7-B905-3D0C28C0D8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A04E5F-EC44-46F7-B905-3D0C28C0D8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A04E5F-EC44-46F7-B905-3D0C28C0D8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A04E5F-EC44-46F7-B905-3D0C28C0D8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
