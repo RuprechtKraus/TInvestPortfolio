@@ -39,7 +39,7 @@ if (string.IsNullOrWhiteSpace(tInvestOptions.Token))
 
 var exportOptions = host.Services.GetRequiredService<IOptions<ExportOptions>>().Value;
 var outputPath = args.FirstOrDefault(argument => !argument.StartsWith('-')) ??
-                 Path.Combine(exportOptions.OutputDirectory, $"portfolio-{DateTime.Now:yyyy-MM-dd}.xlsx");
+                 Path.Combine(exportOptions.OutputDirectory, $"portfolio-{DateTime.Now:yyyy-MM-dd_HH-mm-ss}.xlsx");
 outputPath = Path.GetFullPath(outputPath);
 
 try
